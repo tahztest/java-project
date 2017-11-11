@@ -1,0 +1,8 @@
+Started by upstream project "[8mha:AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JH3fSlUjA7ei1NTiksqcVCA7oCg/KzW5RB8A0vOpHdMAAAA=[0mMy Freestyle Project" build number [8mha:AAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JH3fSlUjA7ei1NTiksqcVCA7oCg/KzW5RN/QCACbKY6b1QAAAA==[0m12
+originally caused by:
+ Started by GitHub push by tahztest
+Building on master in workspace /var/lib/jenkins/workspace/Downstream Project
+[Downstream Project] $ /bin/sh -xe /tmp/hudson3701916008127001394.sh
++ echo 'IMPORTANT_PARAMETER: 12'
+IMPORTANT_PARAMETER: 12
+Finished: SUCCESS

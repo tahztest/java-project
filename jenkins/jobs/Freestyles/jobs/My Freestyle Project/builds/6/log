@@ -1,0 +1,31 @@
+Started by an SCM change
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/eCcxLJUBUMALBjAR8YAAAA=[0mSlave 1 (Linux CentOS) in workspace /var/lib/jenkins/workspace/My Freestyle Project
+Cloning the remote Git repository
+Cloning repository git@github.com:tahztest/jenkins-test.git
+ > git init /var/lib/jenkins/workspace/My Freestyle Project # timeout=10
+Fetching upstream changes from git@github.com:tahztest/jenkins-test.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:tahztest/jenkins-test.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:tahztest/jenkins-test.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:tahztest/jenkins-test.git # timeout=10
+Fetching upstream changes from git@github.com:tahztest/jenkins-test.git
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:tahztest/jenkins-test.git +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/master
+Seen 1 remote branch
+ > git tag -l # timeout=10
+Checking out Revision 375804abb8495b45d763940661ffaa36320b0bdd (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 375804abb8495b45d763940661ffaa36320b0bdd
+Commit message: "Initial commit"
+First time build. Skipping changelog.
+[My Freestyle Project] $ /bin/sh -xe /tmp/hudson7104807214032076971.sh
++ git log
+commit 375804abb8495b45d763940661ffaa36320b0bdd
+Author: tahztest <taz7981@gmail.com>
+Date:   Sun Oct 29 21:48:13 2017 +0000
+
+    Initial commit
+Finished: SUCCESS

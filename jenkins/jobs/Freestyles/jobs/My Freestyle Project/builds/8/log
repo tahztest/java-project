@@ -1,0 +1,80 @@
+Started by user [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL9ksSMqtTUXL2SxCwAhMyqQ8YAAAA=[0mtahzeem taj
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/eCcxLJUBUMALBjAR8YAAAA=[0mSlave 1 (Linux CentOS) in workspace /var/lib/jenkins/workspace/My Freestyle Project
+Cloning the remote Git repository
+Cloning repository git@github.com:tahztest/jenkins-test.git
+ > git init /var/lib/jenkins/workspace/My Freestyle Project # timeout=10
+Fetching upstream changes from git@github.com:tahztest/jenkins-test.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:tahztest/jenkins-test.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:tahztest/jenkins-test.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:tahztest/jenkins-test.git # timeout=10
+Fetching upstream changes from git@github.com:tahztest/jenkins-test.git
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:tahztest/jenkins-test.git +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/master
+Seen 1 remote branch
+ > git tag -l # timeout=10
+Checking out Revision bde757193f75cd743c968f4a8040b87d6fd1f3a2 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bde757193f75cd743c968f4a8040b87d6fd1f3a2
+Commit message: "jenkins poll test"
+ > git rev-list 375804abb8495b45d763940661ffaa36320b0bdd # timeout=10
+[My Freestyle Project] $ /bin/sh -xe /tmp/hudson5969368532781480171.sh
++ git log
+commit bde757193f75cd743c968f4a8040b87d6fd1f3a2
+Author: Taj <tahzeem.taj@eulonml09528.local>
+Date:   Sat Nov 4 23:51:19 2017 +0000
+
+    jenkins poll test
+
+commit c6891563c1347a363dd7f9e673235982cb850ff6
+Author: Taj <tahzeem.taj@eulonml09528.local>
+Date:   Sat Nov 4 22:30:56 2017 +0000
+
+    jenkins poll test
+
+commit 4df93ade0a8cdd0fd111564d25774c7d7f0dc7b7
+Author: Taj <tahzeem.taj@eulonml09528.local>
+Date:   Sat Nov 4 22:28:33 2017 +0000
+
+    jenkins poll test
+
+commit 2457beb7509eb5f9a07b0b52dd0ca534ddcd74b1
+Author: Taj <tahzeem.taj@eulonml09528.local>
+Date:   Sat Nov 4 22:13:50 2017 +0000
+
+    jenkins poll test
+
+commit adcf904293ba06b75d88274b052a2953099c98ed
+Author: Taj <tahzeem.taj@eulonml09528.local>
+Date:   Sat Nov 4 22:11:07 2017 +0000
+
+    jenkins poll test
+
+commit 182a35d33dfce60a5b94c232c955c222fef8b4bd
+Author: Taj <tahzeem.taj@eulonml09528.local>
+Date:   Sat Nov 4 22:07:05 2017 +0000
+
+    .
+
+commit 375804abb8495b45d763940661ffaa36320b0bdd
+Author: tahztest <taz7981@gmail.com>
+Date:   Sun Oct 29 21:48:13 2017 +0000
+
+    Initial commit
+[My Freestyle Project] $ /bin/sh -xe /tmp/hudson2607937168627908782.sh
++ echo :Generic Jenkins $'Variables\342\200\235'
+:Generic Jenkins Variables”
++ echo $'\342\200\234Build' Number $'8\342\200\235'
+“Build Number 8”
++ echo $'\342\200\234Node' Name Slave $'1\342\200\235'
+“Node Name Slave 1”
++ echo $'\342\200\234Job' Name My Freestyle $'Project\342\200\235'
+“Job Name My Freestyle Project”
++ echo $'\342\200\234Executor' Number $'0\342\200\235'
+“Executor Number 0”
++ echo $'\342\200\234Workspace' /var/lib/jenkins/workspace/My Freestyle $'Project\342\200\235'
+“Workspace /var/lib/jenkins/workspace/My Freestyle Project”
+Finished: SUCCESS

@@ -1,0 +1,6 @@
+Started by user [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL9ksSMqtTUXL2SxCwAhMyqQ8YAAAA=[0mtahzeem taj
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/eCcxLJUBUMALBjAR8YAAAA=[0mSlave 1 in workspace /var/lib/jenkins/workspace/Test
+[Test] $ /bin/sh -xe /tmp/hudson4374941135005253458.sh
++ echo 'I Ran'
+I Ran
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+Started on Nov 5, 2017 9:03:10 PM
+Started by event from 192.30.252.42 ⇒ http://tahz71.mylabserver.com:8080/github-webhook/ on Sun Nov 05 21:03:03 UTC 2017
+Using strategy: Default
+[poll] Last Built Revision: Revision bde757193f75cd743c968f4a8040b87d6fd1f3a2 (refs/remotes/origin/master)
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git ls-remote -h git@github.com:tahztest/jenkins-test.git # timeout=10
+Found 1 remote heads on git@github.com:tahztest/jenkins-test.git
+[poll] Latest remote head revision on refs/heads/master is: ca8d2b35e428d5ac1061b5c15a4689c3b42b2a72
+Done. Took 3.6 sec
+Changes found

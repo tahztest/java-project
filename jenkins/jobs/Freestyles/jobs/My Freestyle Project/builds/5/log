@@ -1,0 +1,74 @@
+Started by an SCM change
+Building remotely on [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/eCcxLJUBUMALBjAR8YAAAA=[0mSlave 1 (Linux CentOS) in workspace /var/lib/jenkins/workspace/My Freestyle Project
+Cloning the remote Git repository
+Cloning repository git@github.com:tahztest/jenkins-test.git
+ > git init /var/lib/jenkins/workspace/My Freestyle Project # timeout=10
+ERROR: Error cloning remote repo 'origin'
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.plugins.git.GitException: Could not init /var/lib/jenkins/workspace/My Freestyle Project
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$5.execute(CliGitAPIImpl.java:747)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:539)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:153)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:146)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:153)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:50)
+	at hudson.remoting.Request$2.run(Request.java:332)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+	at ......remote call to Slave 1(Native Method)
+	at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1433)
+	at hudson.remoting.UserResponse.retrieve(UserRequest.java:253)
+	at hudson.remoting.Channel.call(Channel.java:797)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.execute(RemoteGitImpl.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.invoke(RemoteGitImpl.java:132)
+	at com.sun.proxy.$Proxy84.execute(Unknown Source)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1083)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1123)
+	at hudson.scm.SCM.checkout(SCM.java:495)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1278)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:604)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:529)
+	at hudson.model.Run.execute(Run.java:1720)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:404)
+Caused by: hudson.plugins.git.GitException: Error performing command: git init /var/lib/jenkins/workspace/My Freestyle Project
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1977)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1938)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1934)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1572)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$5.execute(CliGitAPIImpl.java:745)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:539)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:153)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1.call(RemoteGitImpl.java:146)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:153)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:50)
+	at hudson.remoting.Request$2.run(Request.java:332)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Cannot run program "git" (in directory "/var/lib/jenkins/workspace/My Freestyle Project"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:243)
+	at hudson.Proc$LocalProc.<init>(Proc.java:212)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:815)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:381)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1966)
+	... 15 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 20 more
+ERROR: Error cloning remote repo 'origin'
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mFinished: FAILURE

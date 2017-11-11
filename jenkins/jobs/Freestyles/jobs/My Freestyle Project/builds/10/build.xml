@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>tahzeem.taj</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.6.3">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.6.0">
+              <sha1>bde757193f75cd743c968f4a8040b87d6fd1f3a2</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>10</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>git@github.com:tahztest/jenkins-test.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.6.3">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/My Freestyle Project</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+  </actions>
+  <queueId>11</queueId>
+  <timestamp>1509840341377</timestamp>
+  <startTime>1509840341378</startTime>
+  <result>SUCCESS</result>
+  <duration>305</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Slave 1</builtOn>
+  <workspace>/var/lib/jenkins/workspace/My Freestyle Project</workspace>
+  <hudsonVersion>2.19.4</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.6.3">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>
