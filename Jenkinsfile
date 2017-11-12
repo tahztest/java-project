@@ -3,7 +3,7 @@ pipeline {
 
   stages {
     stage('build') {
-      steps {
+      step {
         sh 'ant -f build.xml -v'
       }
     }
@@ -11,7 +11,7 @@ pipeline {
 
   post {
     always {
-      steps {
+      step {
         archive 'dist/*jar'
       }
     }
