@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   options {
-    buildDiscarder(logRotator(numToKeepstr: '2', IartifactNumToKeepstr: '1')) // keep two of the latest builds, and 1 artifacts
+    buildDiscarder(logRotator(numToKeepStr: '2', artifactNumToKeepStr: '1')) // keep two of the latest builds, and 1 artifacts
   }
 
   stages {
